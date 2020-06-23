@@ -50,4 +50,6 @@ function deleteCheck(e) {
         const todo = item.parentElement;
         todo.classList.toggle('completed')
     }
+
+    console.log("test")
 }
