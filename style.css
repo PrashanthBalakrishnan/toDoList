@@ -50,6 +50,7 @@ form button:hover{
 .todo-list{
     min-width: 30%;
     list-style: none;
+
 }
 
 .todo{
@@ -60,7 +61,7 @@ form button:hover{
     font-size: 1.5rem;
     justify-content: space-between;
     align-items: center;
-    transition: all 1s ease;
+    transition: all .5s ease;
 }
 
 .todo li{
@@ -95,6 +96,43 @@ form button:hover{
 }
 
 .fall{
-    transform: translate(1rem) translate3d(12px, 50%, 3em);
+    transform: rotate(1deg) translateY(-200px);
     opacity: 0;
+    filter: blur(20px);
+}
+
+select{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    outline: none;
+    border: none;
+}
+
+.select{
+    margin: 1rem;
+    position: relative;
+    overflow: hidden;
+}
+
+select{
+    color:orange;
+    width: 10rem;
+    cursor: pointer;
+    padding:1rem;
+}
+
+.select::after{
+    content: "\25BC";
+    position: absolute;
+    background:rgb(255, 146, 4);
+    top: 0;
+    right: 0;
+    padding:1rem;
+    pointer-events: none;
+}
+.select:hover::after{
+    background:white;
+    color: rgb(255, 146, 4);
+    
 }
