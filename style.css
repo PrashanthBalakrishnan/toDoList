@@ -5,11 +5,13 @@
 }
 
 body{
-    background-image: linear-gradient(120deg,rgb(73, 73, 15) , lightcoral);
+    background-color: black;
     color:white;
     font-family:"poppins",sans-serif;
-    min-height: 100vh;
 }
+
+
+
 
 header{
     font-size:1.5rem;
@@ -26,13 +28,13 @@ form input,form button{
     padding:0,5rem;
     font-size:3rem;
     border:none;
-    background:white;
+    background:rgb(255, 255, 255);
 }
 
 
 form button{
-    color:orange;
-    background: white;
+    color:rgb(39, 22, 194);
+    background: rgba(54, 54, 54, 0.253);
     cursor: pointer;
     transition: all 0.3s ease;
 }
